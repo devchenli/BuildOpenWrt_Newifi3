@@ -16,11 +16,11 @@ on:
     inputs:
       ssh:
         description: 'SSH connection to Actions'
-        required: false
+        required: true
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/Lienol/openwrt.git
+  REPO_URL: https://github.com/coolsnowwolf/lede.git
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
